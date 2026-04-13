@@ -14,14 +14,20 @@ The assignment has two parts:
 
 ```text
 cpp_internship_assignment/
-├── input.mp4
-├── run_part1.sh
-├── Makefile
-├── haarcascade_frontalface_alt2.xml
+├── input.mp4         // Input video file used for testing
+├── run_part1.sh      // Part 1 shell script for GStreamer pipeline
+├── Makefile          // Build file for compiling the C++ program
+├── face_copper       // Compiled executable
 ├── src/
-│   └── main.cpp
-├── frames/
-└── cropped_faces/
+│   └── main.cpp      // Main_code
+├── frames/           // Part 1 output: extracted JPEG frames
+|     └── frame1
+|     └── frame2 ..
+|
+└── cropped_faces/   // Part 2 output: cropped faces saved frame-wise
+|        └── frame1
+|               └── face_1 
+                └── face_2 ...
 ```
 
 ---
@@ -86,11 +92,6 @@ make
 ./face_cropper
 ```
 
-If you want to provide explicit paths:
-
-```bash
-./face_cropper frames cropped_faces haarcascade_frontalface_alt2.xml
-```
 
 ### Output of Part 2
 
