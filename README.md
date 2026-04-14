@@ -1,4 +1,4 @@
-# C++ Internship Assessment Submission
+# C++ Internship Assessment Submission 
 
 ## Overview
 This submission contains the solution for the C++ Internship Assessment.
